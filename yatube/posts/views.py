@@ -8,5 +8,5 @@ def index(request):
 def group_posts(request):
     return HttpResponse('Посты, отфильтрованные по группам')
 
-def group_number(request, pk):
-    return HttpResponse(f'Пост номер {pk}')
+def group_slug(request, slug):
+    return HttpResponse(f'Пост номер {slug}')
